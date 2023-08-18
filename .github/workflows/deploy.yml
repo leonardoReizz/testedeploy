@@ -15,4 +15,4 @@ jobs:
         HOST: ${{ secrets.REMOTE_SERVER_IP }}
         USER: ${{ secrets.REMOTE_USER }}
       run: |
-        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $USER@$HOST "your_command_here"
+        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $USER@$HOST "/home/projects/deploy/imagineui.sh"
